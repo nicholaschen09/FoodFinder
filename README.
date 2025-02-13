@@ -1,43 +1,51 @@
-# Food Finder Project Architecture
+# Food Finder
 
-food-finder/
-├── client/
-│   ├── public/
-│   │   └── index.html            // Main HTML file for the client
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── LocationComponent.jsx   // Gets user geolocation
-│   │   │   ├── RestaurantList.jsx        // Displays nearby restaurants
-│   │   │   ├── OrderInput.jsx            // Input for user food preferences
-│   │   │   └── AnalyticsTracker.jsx      // Tracks user interactions
-│   │   ├── App.jsx                       // Main app component
-│   │   └── index.js                      // Entry point for client-side JS
-│   ├── package.json                      // Client dependencies and scripts
-│   └── .env                              // Client environment variables (if needed)
-│
-├── server/
-│   ├── controllers/
-│   │   ├── locationController.js         // Handles location-related requests
-│   │   ├── orderController.js            // Handles order suggestion requests
-│   │   └── analyticsController.js        // Processes analytics data
-│   ├── routes/
-│   │   ├── location.js                   // /location endpoints
-│   │   ├── order.js                      // /order endpoints
-│   │   └── analytics.js                  // /analytics endpoints
-│   ├── services/
-│   │   ├── googleApiService.js           // Integrates with Google Maps/Places API
-│   │   ├── openaiService.js              // Integrates with OpenAI API
-│   │   └── analyticsService.js           // Analytics data processing
-│   ├── models/
-│   │   └── analyticsModel.js             // Database schema/model for analytics
-│   ├── app.js                            // Express app configuration
-│   ├── server.js                         // Server entry point (starts the app)
-│   ├── package.json                      // Server dependencies and scripts
-│   └── .env                              // Server environment variables (API keys, etc.)
-│
-├── database/
-│   ├── schema.sql                        // SQL schema/migration scripts
-│   └── seed.js                           // Seed data for initial DB population
-│
-├── README.md                             // Project documentation
-└── .gitignore                            // Files to ignore in git
+## Overview
+Food Finder is a full-stack application that allows users to:
+- Search for nearby restaurants using the Google Places API.
+- Generate restaurant orders using the OpenAI API.
+- Log and view analytics in a MongoDB database.
+
+The backend is built with Node.js, Express, and Mongoose, and the frontend is built with React.
+
+## Features
+- **Restaurant Search**: Fetch nearby restaurants based on user location.
+- **Order Generation**: Generate restaurant orders via OpenAI.
+- **Analytics Logging**: Store order queries and results along with user location.
+- **Responsive UI**: Modern React interface for a great user experience.
+
+## Prerequisites
+- Node.js and npm installed.
+- MongoDB Atlas account (or local MongoDB instance).
+- Valid API keys for:
+  - Google Places API
+  - OpenAI API
+
+## Setup
+
+### frontend (Client)
+**Navigate to the server directory:**
+   ```bash
+   cd "/Users/nicholaschen/food finder/client"
+    ```npm start
+
+### Backend (Server)
+**Navigate to the server directory:**
+   ```bash
+   cd "/Users/nicholaschen/food finder/server"
+    ```npm start
+
+**Install dependencies:**
+    ```bash
+    npm install
+    ```
+**Create a `.env` file in the root directory:**
+    ```bash
+    touch .env
+    ```
+**Add the following environment variables to the `.env` file:**
+    ```bash
+    GOOGLE__API_KEY=<YOUR_GOOGLE_API_KEY>
+    OPENAI_API_KEY=<YOUR_OPENAI_API_KEY>
+    DATABASE_URL=<YOUR_MONGODB_URI>
+    ```

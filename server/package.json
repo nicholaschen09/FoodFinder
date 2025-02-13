@@ -4,7 +4,8 @@
   "description": "Backend for the Food Finder project",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "start:server": "cd server && npm start"
   },
   "author": "",
   "license": "MIT",
