@@ -31,7 +31,6 @@ The backend is built with Node.js, Express, and Mongoose, and the frontend is bu
 
 **Navigate to the server directory:**
 
-````bash
 cd "/Users/nicholaschen/food finder/client"
  ```npm start
 
