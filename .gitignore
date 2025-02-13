@@ -1,0 +1,23 @@
+# Node modules for both client and server
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables file
+.env
+
+# Local OS files
+.DS_Store
+
+# Coverage directory (if using test coverage)
+coverage/
+
+# Build output directories
+build/
+dist/
+
+# Other artifacts
+*.log
