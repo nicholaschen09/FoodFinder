@@ -39,6 +39,7 @@ npm start
 ### Backend (Server)
 
 **Navigate to the server directory:**
+
 ```bash
 cd "/Users/nicholaschen/food finder/server"
 npm start
