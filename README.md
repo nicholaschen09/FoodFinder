@@ -46,17 +46,44 @@ npm start
  ```
 
 **Install dependencies:**
+
+ install in client directory
+
  ```bash
+ cd "/Users/nicholaschen/food finder/client"
  npm install
  ```
-**Create a `.env` file in the root directory:**
+ install in server directory
+
  ```bash
+ cd "/Users/nicholaschen/food finder/server"
+ npm install
+ ```
+
+**Create a `.env` file in the root directory:**
+  
+  create in server directory
+
+ ```bash
+ cd "/Users/nicholaschen/food finder/server"
+ touch .env
+ ```
+  create in client directory
+
+ ```bash
+ cd "/Users/nicholaschen/food finder/client"
  touch .env
  ```
 **Add the following environment variables to the `.env` file:**
+
+  server directory
  ```bash
  GOOGLE__API_KEY=<YOUR_GOOGLE_API_KEY>
  OPENAI_API_KEY=<YOUR_OPENAI_API_KEY>
  DATABASE_URL=<YOUR_MONGODB_URI>
  ```
 
+  client directory
+ ```bash 
+ REACT_APP_API_URL=http://localhost:3000
+ ```
