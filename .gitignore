@@ -7,7 +7,9 @@ yarn-debug.log*
 yarn-error.log*
 
 # Environment variables file
-.env
+*.env
+/food finder/client/.env
+/food finder/server/.env
 
 # Local OS files
 .DS_Store
