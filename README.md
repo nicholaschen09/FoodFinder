@@ -77,6 +77,7 @@ npm start
 **Add the following environment variables to the `.env` file:**
 
   server directory
+  
  ```bash
  GOOGLE__API_KEY=<YOUR_GOOGLE_API_KEY>
  OPENAI_API_KEY=<YOUR_OPENAI_API_KEY>
@@ -84,6 +85,7 @@ npm start
  ```
 
   client directory
+
  ```bash 
  REACT_APP_API_URL=http://localhost:3000
  ```
