@@ -34,22 +34,23 @@ The backend is built with Node.js, Express, and Mongoose, and the frontend is bu
 cd "/Users/nicholaschen/food finder/client"
  ```npm start
 
+ ```
 ### Backend (Server)
 **Navigate to the server directory:**
-```bash
+```
 cd "/Users/nicholaschen/food finder/server"
  ```npm start
 
 **Install dependencies:**
- ```bash
+ ```
  npm install
  ```
 **Create a `.env` file in the root directory:**
- ```bash
+ ```
  touch .env
  ```
 **Add the following environment variables to the `.env` file:**
- ```bash
+ ```
  GOOGLE__API_KEY=<YOUR_GOOGLE_API_KEY>
  OPENAI_API_KEY=<YOUR_OPENAI_API_KEY>
  DATABASE_URL=<YOUR_MONGODB_URI>
